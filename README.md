@@ -129,6 +129,22 @@ claude plugin validate .
 claude --plugin-dir .      # load this checkout for one session without installing
 ```
 
+## What this plugin runs and accesses
+
+- **Contents:** one skill (`co-scientist`) made of Markdown instructions, plus two scripts. It has no hooks,
+  no MCP servers and no background processes, and it installs no packages.
+- **Local commands:** Claude runs `python skills/co-scientist/scripts/elo.py` to keep the tournament
+  state. It uses only the Python standard library and reads and writes files in
+  `.coscientist_runs/<slug>/` in your current project, and nowhere else.
+- **Subagents:** it starts Claude subagents (generation, review, ranking, evolution, meta-review) through
+  Claude Code's own `Agent` tool.
+- **Network:** the plugin itself sends nothing anywhere. Agents may use Claude's built-in web search and
+  fetch to check ideas against published work. You can tell it not to search.
+- **Data:** it has no telemetry and no analytics, and it collects no personal data. Everything the run
+  produces stays in the run folder in your project.
+- **Optional:** `scripts/coscientist_workflow.js` is used only if you explicitly ask for a Workflow-tool
+  run.
+
 ## Provenance
 
 Based on *Towards an AI co-scientist* (Gottweis et al., [arXiv:2502.18864](https://arxiv.org/abs/2502.18864);

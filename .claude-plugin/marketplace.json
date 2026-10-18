@@ -11,7 +11,7 @@
     {
       "name": "co-scientist",
       "source": "./",
-      "description": "Generate, debate, Elo-rank and evolve novel hypotheses for hard, open-ended goals (Google AI Co-Scientist replica).",
+      "description": "A team of AI agents that generates, peer-reviews, debates and evolves ideas for a hard, open-ended problem, then ranks them in an Elo tournament and hands you a research overview. Works for science, engineering, product and strategy goals.",
       "category": "productivity"
     },
     {
@@ -20,7 +20,7 @@
         "source": "github",
         "repo": "Jaseelkt007/co-scientist-lab"
       },
-      "description": "Co-Scientist plus an Experiment agent: runs each idea through your project's own command and ranks on measured results. Asks a few setup questions, then loops for N rounds or until your target metric is hit.",
+      "description": "Co-Scientist with an Experiment agent: it tests each idea by running your project's own training, benchmark or test command, ranks ideas on measured results instead of argument, and loops until your target metric is reached or the round budget is spent.",
       "category": "productivity"
     }
   ]
