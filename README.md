@@ -7,22 +7,30 @@ with the number of rounds** you let it run.
 
 ## Install
 
-Inside Claude Code:
+```
+/plugin install co-scientist --marketplace Jaseelkt007/co-scientist
+```
+
+Or in two steps (inside Claude Code, or prefix with `claude` in your shell):
 
 ```
 /plugin marketplace add Jaseelkt007/co-scientist
 /plugin install co-scientist@jaseel-plugins
 ```
 
-Or from your shell:
-
-```bash
-claude plugin marketplace add Jaseelkt007/co-scientist
-claude plugin install co-scientist@jaseel-plugins
-```
-
 Requires Python 3 on your `PATH` (the Elo bookkeeping script uses only the standard library).
 Update later with `/plugin marketplace update jaseel-plugins`.
+
+### Want ideas *measured*, not just argued? → `co-scientist-lab`
+
+The same marketplace has **[co-scientist-lab](https://github.com/Jaseelkt007/co-scientist-lab)**: this
+engine plus an Experiment agent that runs each idea through your project's own command (training run,
+benchmark, test suite), asks a few setup questions (command, metric, target, rounds), and loops until the
+target is hit or the round budget is spent.
+
+```
+/plugin install co-scientist-lab@jaseel-plugins
+```
 
 ---
 
@@ -106,7 +114,7 @@ many agents and use a lot of tokens.
 ```
 .claude-plugin/
   plugin.json          plugin manifest
-  marketplace.json     marketplace listing (this repo is its own marketplace)
+  marketplace.json     the jaseel-plugins marketplace (lists co-scientist and co-scientist-lab)
 skills/co-scientist/
   SKILL.md             orchestration instructions
   agents/              subagent personas (supervisor, generation, reflection, ranking, ...)

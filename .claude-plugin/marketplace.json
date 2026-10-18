@@ -13,6 +13,15 @@
       "source": "./",
       "description": "Generate, debate, Elo-rank and evolve novel hypotheses for hard, open-ended goals (Google AI Co-Scientist replica).",
       "category": "productivity"
+    },
+    {
+      "name": "co-scientist-lab",
+      "source": {
+        "source": "github",
+        "repo": "Jaseelkt007/co-scientist-lab"
+      },
+      "description": "Co-Scientist plus an Experiment agent: runs each idea through your project's own command and ranks on measured results. Asks a few setup questions, then loops for N rounds or until your target metric is hit.",
+      "category": "productivity"
     }
   ]
 }
