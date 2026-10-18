@@ -1,7 +1,7 @@
 {
   "name": "co-scientist",
   "displayName": "Co-Scientist",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A team of AI agents that generates, peer-reviews, debates and evolves ideas for a hard, open-ended problem, then ranks them in an Elo tournament and hands you a research overview. Works for science, engineering, product and strategy goals.",
   "author": {
     "name": "Mohammed Jaseel Kunnathodika",
