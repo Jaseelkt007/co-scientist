@@ -1,0 +1,13 @@
+{
+  "name": "co-scientist",
+  "version": "0.1.0",
+  "description": "Multi-agent hypothesis engine replicating Google's AI Co-Scientist: generate, peer-review, Elo-tournament, evolve and synthesize novel ideas for hard, open-ended goals in any domain.",
+  "author": {
+    "name": "Mohammed Jaseel Kunnathodika",
+    "url": "https://github.com/Jaseelkt007"
+  },
+  "homepage": "https://github.com/Jaseelkt007/co-scientist",
+  "repository": "https://github.com/Jaseelkt007/co-scientist",
+  "license": "MIT",
+  "keywords": ["research", "hypothesis", "ideation", "multi-agent", "elo", "co-scientist"]
+}

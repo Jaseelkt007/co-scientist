@@ -1,0 +1,9 @@
+# Local research material (paper PDFs and extracted text are not redistributed)
+research/
+
+# Run output and local settings
+.coscientist_runs/
+.claude/settings.local.json
+
+__pycache__/
+*.pyc
